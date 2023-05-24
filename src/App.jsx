@@ -13,7 +13,7 @@ import Cart from './pages/Cart'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<AppLayout />}>
+    <Route path="/FakeStore/" element={<AppLayout />}>
       <Route index element={<Home />} />
       <Route path="products" element={<Products />} />
       <Route path="contact" element={<Contact />} />
