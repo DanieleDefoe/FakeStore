@@ -16,7 +16,7 @@ export default function Header({ chosenCardsLength }) {
         <Link to="/FakeStore/">FakeStore</Link>
       </h1>
       <nav>
-        <ul className="flex items-center justify-center gap-16 text-white text-2xl">
+        <ul className="flex items-center header__nav justify-center gap-16 text-white text-2xl flex-wrap">
           <li className="hover:text-green-300 transition-colors">
             <NavLink to="/FakeStore/" style={setActiveStyle}>
               Home

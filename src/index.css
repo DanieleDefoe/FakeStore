@@ -57,3 +57,46 @@ main {
 .product-grid {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+@media only screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .home > .left {
+    order: 2;
+    align-items: center;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    line-height: 1.25;
+    font-size: 3.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header__nav {
+    gap: 20px;
+  }
+}

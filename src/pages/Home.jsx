@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
-    <section className="w-full h-full flex items-center justify-center">
+    <section className="w-full h-full flex items-center justify-center home">
       <div className="left w-full max-w-[600px] flex flex-col gap-5">
         <h2 className="uppercase text-gray-700 text-2xl font-bold">
           best online store of the year
@@ -20,7 +20,7 @@ export default function Home() {
           Shop now
         </Link>
       </div>
-      <div className="right w-full max-w-[800px]">
+      <div className="right w-full max-w-[650px]">
         <img src={fashion} width="100%" className="rounded-[30px] shadow-2xl" />
       </div>
     </section>
