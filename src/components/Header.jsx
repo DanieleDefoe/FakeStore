@@ -23,7 +23,7 @@ export default function Header({ chosenCardsLength }) {
             </NavLink>
           </li>
           <li className="hover:text-green-300 transition-colors">
-            <NavLink to="products" style={setActiveStyle}>
+            <NavLink to="products" end style={setActiveStyle}>
               Products
             </NavLink>
           </li>

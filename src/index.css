@@ -84,6 +84,16 @@ main {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .product {
+    flex-direction: column;
+  }
+
+  .product-image-holder {
+    margin-inline: auto;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .title {
     line-height: 1.25;
