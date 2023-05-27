@@ -79,6 +79,18 @@ main {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 
+  .cart-section {
+    flex-direction: column;
+  }
+
+  .cart-section > ul {
+    max-width: unset;
+  }
+
+  .cart-section > .buy {
+    align-self: center;
+  }
+
   footer {
     text-align: center;
   }
@@ -108,5 +120,9 @@ main {
 @media only screen and (max-width: 550px) {
   .header__nav {
     gap: 20px;
+  }
+
+  .chosen-card {
+    padding-block: 40px;
   }
 }

@@ -19,7 +19,7 @@ export default function ChosenCard({
   }, [amount])
 
   return (
-    <article className="w-full max-w-[600px] p-5 rounded-2xl shadow-2xl bg-white flex gap-8 relative">
+    <article className="w-full p-5 rounded-2xl chosen-card shadow-2xl bg-white flex gap-8 relative">
       <img src={image} className="w-full max-w-[150px] block object-contain" />
       <div className="flex flex-col justify-center gap-6">
         <h3 className="text-xl font-bold text-gray-900">{title}</h3>

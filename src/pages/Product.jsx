@@ -1,12 +1,20 @@
-import { useParams, useOutletContext, Link } from 'react-router-dom'
+import {
+  useParams,
+  useOutletContext,
+  Link,
+  useLoaderData,
+} from 'react-router-dom'
 import cardsData from '../utils/cardsData'
+
+export function loader({ params }) {
+  return cardsData.find((card) => card.id === params.id)
+}
 
 export default function Product() {
   const { id } = useParams()
-  console.log(id)
   const { addCardToCart, increaseTotalPrice } = useOutletContext()
-  const clickedCard = cardsData.find((card) => card.id === id)
-  const { image, title, price } = clickedCard
+  const product = useLoaderData()
+  const { image, title, price } = product
   return (
     <article className="max-w-[1280px] mx-auto flex flex-col items-start gap-[30px]">
       <Link

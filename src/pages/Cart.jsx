@@ -32,9 +32,11 @@ export default function Cart() {
   )
 
   return (
-    <section className="w-full h-full max-w-[1280px] mx-auto flex flex-wrap justify-between items-start">
-      <ul className="flex flex-col gap-8">{chosenCardElements}</ul>
-      <div className="w-full max-w-[600px] rounded-2xl flex bg-white flex-col items-center justify-center gap-5 shadow-2xl">
+    <section className="w-full h-full max-w-[1280px] mx-auto flex gap-10 justify-between items-start cart-section">
+      <ul className="flex flex-col gap-8 w-full max-w-[600px]">
+        {chosenCardElements}
+      </ul>
+      <div className="w-full max-w-[600px] rounded-2xl flex bg-white flex-col items-center justify-center gap-5 shadow-2xl buy">
         <p className="uppercase text-2xl font-bold px-4 pt-5">
           total: $ {totalPrice.toFixed(2)}
         </p>
