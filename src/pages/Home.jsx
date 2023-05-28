@@ -20,7 +20,7 @@ export default function Home() {
           Shop now
         </Link>
       </div>
-      <div className="right w-full max-w-[650px]">
+      <div className="right w-full max-w-[750px]">
         <img src={fashion} width="100%" className="rounded-[30px] shadow-2xl" />
       </div>
     </section>
