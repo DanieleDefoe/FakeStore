@@ -6,8 +6,15 @@ import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
 
 export default function AppLayout() {
-  const [chosenCards, setChosenCards] = useState([])
-  const [totalPrice, setTotalPrice] = useState(0)
+  const [chosenCards, setChosenCards] = useState(
+    () => JSON.parse(localStorage.getItem('chosenCards')) || [],
+  )
+  const [totalPrice, setTotalPrice] = useState(
+    () => JSON.parse(localStorage.getItem('totalPrice')) || 0,
+  )
+
+  localStorage.setItem('chosenCards', JSON.stringify(chosenCards))
+  localStorage.setItem('totalPrice', JSON.stringify(totalPrice))
 
   function addCardToCart(image, title, price, id) {
     setChosenCards((prevChosenCards) => {
